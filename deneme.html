@@ -1,0 +1,39 @@
+<!doctype html>
+
+
+<html>
+
+<head>
+
+<script LANGUAGE="JavaScript">
+function CoffeePreview(sel) {
+document.getElementById('preview').src = "" + sel.options[sel.selectedIndex].value;
+}
+
+</script>
+</head>
+
+
+
+<body>
+<!-- this script Coded by: Adam Babazada -->
+<center>
+<form name="previewselect">
+<select name="selbox" size="1" onChange="CoffeePreview(this)">
+<option value="http://www.javascriptfreecode.com/images/ci_1-small.jpg">Burger #1</option>
+<option value="http://www.javascriptfreecode.com/images/ci_2-small.jpg">Burger #2</option>
+<option value="http://www.javascriptfreecode.com/images/ci_3-small.jpg">Burger #3</option>
+<option value="http://www.javascriptfreecode.com/images/ci_4-small.jpg">Burger #4</option>
+<option value="http://www.javascriptfreecode.com/images/ci_5-small.jpg">Burger #5</option>
+<option value="http://www.javascriptfreecode.com/images/ci_6-small.jpg">Burger #6</option>
+</select>
+<p>
+<img name="preview" id="preview" src="http://www.javascriptfreecode.com/images/ci_1-small.jpg" width="500" height="500" border="1">
+</p>
+</form>
+</center>
+
+
+
+</body>
+</html>
